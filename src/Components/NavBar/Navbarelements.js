@@ -32,7 +32,7 @@ cursor:pointer;
 }
 `
 
-/*export const Bars = styled(FaBars)`
+export const Bars = styled(FaBars)`
 display:none;
 color:#fff;
 
@@ -45,7 +45,7 @@ color:#fff;
     font-size:1.8rem;
     cursor:pointer;
 }
-`*/
+`
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;

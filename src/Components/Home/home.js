@@ -3,7 +3,7 @@ import Description from './description'
 
 const Content = () => {
     return (
-        <div>
+        <div style={{margin:'auto'}}>
             <div style={
             {
             borderStyle:'solid',
