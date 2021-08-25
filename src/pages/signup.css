@@ -1,0 +1,47 @@
+.mb-2{
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+
+}
+.form-label{
+    margin-left:10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    color: white;
+    display: none;
+    
+
+}
+.form-control{
+    height: 50px;
+    width: 50%;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: springgreen;
+    text-align: center;
+    text-decoration-color: steelblue;
+    
+}
+.form-control:hover{
+    border-color: slateblue;
+}
+.form-control:focus{
+   border-color: steelblue;
+}
+.btn{
+    font-size: 25px;
+    background-color: springgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin: 20px 20px 500px 20px;
+    
+}
+.btn:hover{
+    background-color: slateblue;
+}

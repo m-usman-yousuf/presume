@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/NavBar';
+import { BrowserRouter as Router, Switch,Route,Redirect } from 'react-router-dom';
+import Home from './pages';
+import Signup from './pages/signup';
+import { CssBaseline, makeStyles } from '@material-ui/core';
+const useStyles= makeStyles((theme)=>({
+  root:{
+    
+    backgroundImage:`url(${process.env.PUBLIC_URL+"/assets/back.jpg"})`,
+    backgroundSize:'cover',
+    backgroundRepeat:'no-repeat',
+    backgroundAttachment:'fixed',
+    textAlign:'center',
+    marginLeft:'auto',
+    marginRight:'auto',
+  
 
+
+
+  },
+}));
 function App() {
+  const classes =useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <CssBaseline/>
+     
+    
+    <Router  >
+      <Navbar />
+      <Switch 
+      >
+        <Route path='/' exact component={Home}> <Redirect to="/index" /></Route>
+        <Route path='/index' exact component={Home}/>
+        <Route path='/signup' exact component={Signup} />
+
+      </Switch>
+    </Router>
     </div>
+    
   );
 }
 
